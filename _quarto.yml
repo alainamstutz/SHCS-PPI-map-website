@@ -15,9 +15,9 @@ website:
     left:
       - text: "PPI models"
         href: ppi_models/index.qmd
-      - text: "Prospective Clinical Trial"
+      - text: "Prospective Clinical Study"
         href: rct/index.qmd
-      - text: "Observational Study"
+      - text: "Observational Analysis"
         href: observational/index.qmd
       - text: "Qualitative Study"
         href: qualitative/index.qmd

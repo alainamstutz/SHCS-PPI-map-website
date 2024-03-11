@@ -1,5 +1,5 @@
 ---
-title: Observational Study
+title: Observational Analysis
 ---
 
 ```{r, echo=F, message=F, warning=F, include=F}
@@ -11,7 +11,7 @@ library(here)
 ```
 
 ```{r, echo=F, message=F, warning=F, include=F}
-df_obs <- read_xlsx(here("HIV_PPI_map.xlsx"), sheet = "Observational Study")
+df_obs <- read_xlsx(here("HIV_PPI_map.xlsx"), sheet = "Observational Analysis")
 ```
 
 ## Planning/Preparation Phase
