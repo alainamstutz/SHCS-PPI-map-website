@@ -8,7 +8,7 @@ At the start of your project, define which model (or a mix thereof) you want to 
 
 ```{=html}
 <div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">Download the SCTO PPI agreement template</a>
+<a class="btn btn-primary" href="https://alainamstutz.github.io/SHCS-PPI-map-website/ppi_written_agreement_template_v1.0_230301.docx" role="button" target="_blank" style="padding: 15px 30px;">Download the SCTO PPI agreement template</a>
 </div>
 ```
 
