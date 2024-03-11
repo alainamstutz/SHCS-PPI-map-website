@@ -4,12 +4,12 @@ website:
   description: "The HIV PPI map to guide HIV researchers"
   image: img/shcs_logo.jpg
   
-  favicon: img/shcs_logo.jpg
+  favicon: img/red-ribbon.png
   
   # start of the navigation bar at the top of the website
   navbar:
     pinned: true
-    logo: /img/shcs_logo.png
+    logo: /img/red-ribbon.png
     
     # your sub-pages
     left:
@@ -19,6 +19,8 @@ website:
         href: rct/index.qmd
       - text: "Observational Study"
         href: observational/index.qmd
+      - text: "Qualitative Study"
+        href: qualitative/index.qmd
       - text: "Laboratory Study"
         href: lab/index.qmd
     

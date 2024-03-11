@@ -1,0 +1,141 @@
+---
+title: Observational Study
+---
+
+```{r, echo=F, message=F, warning=F, include=F}
+library(dplyr)
+library(readxl)
+library(DT)
+library(formattable) 
+library(here)
+```
+
+```{r, echo=F, message=F, warning=F, include=F}
+df_obs <- read_xlsx(here("HIV_PPI_map.xlsx"), sheet = "Observational Study")
+```
+
+## Planning/Preparation Phase
+
+### PPI preparatory work
+```{r, echo=F, message=F, warning=F}
+df <- df_obs %>% 
+  filter(`Task Area` == "PPI Preparatory Work") %>% 
+  select(-Phase, -`Task Area`, -`Add References and Links`)
+as.datatable(
+  formattable(df),
+  rownames = FALSE,
+  options = list(
+    dom = 't',
+    initComplete = JS(
+      "function(settings, json) {",
+      "$(this.api().table().header()).css({'font-size': '13px'});",
+      "$(this.api().table().body()).css({'font-size': '12px'});",
+      "}"
+    )
+  )
+)
+```
+
+### Study documents
+```{r, echo=F, message=F, warning=F}
+df <- df_obs %>% 
+  filter(`Task Area` == "Study documents") %>% 
+  select(-Phase, -`Task Area`, -`Add References and Links`)
+as.datatable(
+  formattable(df),
+  rownames = FALSE,
+  options = list(
+    dom = 't',
+    initComplete = JS(
+      "function(settings, json) {",
+      "$(this.api().table().header()).css({'font-size': '13px'});",
+      "$(this.api().table().body()).css({'font-size': '12px'});",
+      "}"
+    )
+  )
+)
+```
+
+## Implementation Phase
+
+## Closure/Post-Closure Phase
+
+### Results interpretation
+```{r, echo=F, message=F, warning=F}
+df <- df_obs %>% 
+  filter(`Task Area` == "Results interpretation") %>% 
+  select(-Phase, -`Task Area`, -`Add References and Links`)
+as.datatable(
+  formattable(df),
+  rownames = FALSE,
+  options = list(
+    dom = 't',
+    initComplete = JS(
+      "function(settings, json) {",
+      "$(this.api().table().header()).css({'font-size': '13px'});",
+      "$(this.api().table().body()).css({'font-size': '12px'});",
+      "}"
+    )
+  )
+)
+```
+
+### PPI reporting and evaluation
+```{r, echo=F, message=F, warning=F}
+df <- df_obs %>% 
+  filter(`Task Area` == "PPI reporting and evaluation") %>% 
+  select(-Phase, -`Task Area`, -`Add References and Links`)
+as.datatable(
+  formattable(df),
+  rownames = FALSE,
+  options = list(
+    dom = 't',
+    initComplete = JS(
+      "function(settings, json) {",
+      "$(this.api().table().header()).css({'font-size': '13px'});",
+      "$(this.api().table().body()).css({'font-size': '12px'});",
+      "}"
+    )
+  )
+)
+```
+
+### Results manuscript
+```{r, echo=F, message=F, warning=F}
+df <- df_obs %>% 
+  filter(`Task Area` == "Results manuscript") %>% 
+  select(-Phase, -`Task Area`, -`Add References and Links`)
+as.datatable(
+  formattable(df),
+  rownames = FALSE,
+  options = list(
+    dom = 't',
+    initComplete = JS(
+      "function(settings, json) {",
+      "$(this.api().table().header()).css({'font-size': '13px'});",
+      "$(this.api().table().body()).css({'font-size': '12px'});",
+      "}"
+    )
+  )
+)
+```
+
+### Results dissemination and public engagement
+```{r, echo=F, message=F, warning=F}
+df <- df_obs %>% 
+  filter(`Task Area` == "Results dissemination and public engagement") %>% 
+  select(-Phase, -`Task Area`, -`Add References and Links`)
+as.datatable(
+  formattable(df),
+  rownames = FALSE,
+  options = list(
+    dom = 't',
+    initComplete = JS(
+      "function(settings, json) {",
+      "$(this.api().table().header()).css({'font-size': '13px'});",
+      "$(this.api().table().body()).css({'font-size': '12px'});",
+      "}"
+    )
+  )
+)
+```
