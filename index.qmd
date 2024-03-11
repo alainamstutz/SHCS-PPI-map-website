@@ -25,7 +25,6 @@ This hands-on, easy-to-search, continuously growing online evidence map aims to 
 
 Feel free to [contact us](mailto:David.Jackson-Perry©chuv.ch) if you have any questions, comments, or would like to add your PPI example to this homepage.
 
-
 ```{=html}
 <div  style="margin: 30px; text-align: center;">
 <a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the underlying mapping review that informed the creation of this evidence map</a>
