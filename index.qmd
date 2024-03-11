@@ -23,10 +23,12 @@ And so does the Swiss HIV Cohort Studies (SHCS). For each SHCS nested project fu
 
 This hands-on, easy-to-search, continuously growing online evidence map aims to help researchers implementing PPI in their own HIV research project. 
 
-Feel free to [contact us](mailto:David.Jackson-Perry©chuv.ch) if you have any questions, comments, or would like to add your PPI example to this homepage.
+Send us your PPI examples from your SHCS study and we will add your example to this homepage! Please download and use <a href="https://osf.io/njqk2" target="_blank">this reporting template</a>. 
+
+Feel free to [contact us](mailto:David.Jackson-Perry©chuv.ch) if you have any questions or comments.
 
 ```{=html}
 <div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the underlying mapping review that informed the creation of this evidence map</a>
+<a class="btn btn-primary" href="xxx" role="button" target="_blank" style="padding: 15px 30px;">View the underlying mapping review that informed the creation of this evidence map</a>
 </div>
 ```
