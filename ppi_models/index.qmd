@@ -1,0 +1,62 @@
+---
+title: PPI models
+---
+
+During our mapping review, we identified 4 common models how research teams applied PPI in their HIV research project. We briefly present them here, including examples from the review.
+
+At the start of your project, define which model (or a mix thereof) you want to use. A good start is to download and fill in the PPI agreement template:
+
+```{=html}
+<div  style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">Download the SCTO PPI agreement template</a>
+</div>
+```
+
+More useful PPI material available on the <a href="https://www.scto.ch/en/patient-and-public-involvement/ppi-resources.html" target="_blank">SCTO PPI homepage.</a>
+
+To report your PPI efforts (e.g. as a supplement to your main results), use the <a href="https://researchinvolvement.biomedcentral.com/articles/10.1186/s40900-017-0062-2/tables/2" target="_blank">GRIPP2</a> short form. A filled in example can be found
+<a href="https://www.bmj.com/content/358/bmj.j3453" target="_blank">here</a> in Table 3.
+
+## Model A
+
+*A few PPI representatives as part of study team (with decision power in the overall study management)*
+
+(a) The Protocol Advisor (PA) is a person living with HIV and was part of the study team. The  Protocol Advisor made suggestions and recommendations based on personal experiences and knowledge. He was key in helping the research staff understand the setting, to improve study procedures, data collection process, but also interpreting results. It is important, that the PA has substantive knowledge of the research content in addition to technical research skills. The PA rapported regularly with participants to gather ideas and to provide feedback from the patient perspectives.
+<a href='https://tinyurl.com/Carey1992'>Carey 1992</a>
+
+(b) 1-2 representatives are chosen to be part of a trial management group. The group is responsible for the set-up, day to day running of the trial, release of results or publications. Often the chosen representatives are already experienced in PPI activities and they tend to have a good understanding of research processes and the disease area and have links with the patient community. Meetings were held face to face or by telephone, on a weekly or monthly base. In the starting process, the representatives were offered extensive background information to understand the study and what their tasks are.
+<a href='https://tinyurl.com/South2016'>South 2016</a>
+
+## Model B
+
+*The same group of PPI representatives is consulted regularly throughout the study (without decision power in the overall study management)*
+
+The PPI strategy was based on regular consultation meetings with an external PPI Team. During these 2h meetings, 37 discussions on different themes were held with the Team. These discussions not only informed members but asked their opinion about research processes and concepts associated with the study. Their input often served to improve/validate data collection instruments and research results, and, more specifically, make decisions concerning the development of and the organization of patient engagement. Additionally, members were actively involved in the expansion of the I-Score Study into a broader research programme: they gained an advisory status on four subprojects of the Study and one of the PPI Team eventually became a co-author.
+<a href='https://tinyurl.com/Lessard2019'>Lessard 2019</a>
+
+## Model C
+
+*A few PPI representatives are part of study team AND a group of PPI representatives is consulted regularly*
+
+(a) Community representatives from regionally diverse HIV and gay men’s sexual health charities were invited to join an "e-group" along with researchers, clinicians, commissioners and policy makers, to design a trial that was both acceptable to potential participants and able to address the relevant research questions and ultimately to influence policy and practice. This group met through face-to-face meetings and teleconferences, every 6 months. The e-group elected 1 member to become the Trial Social Scientist to take notes during meetings and to be the main linkage between the researchers and the e-group. The Trial Social Scientist provided more regular PPI input and remained involved in trial management and oversight committees throughout the trial and had decision power.
+<a href='https://tinyurl.com/Gafos2020'>Gafos 2020</a>
+
+(b) Patients were recruited for a Participant Advisory Panel by the Protocol Advisor. They met on a weekly basis with the Protocol Advisor, who served as a liasion between the investigators and the Participant Advisory Panel and was part of the study management team. The Participant Advisory Panel performed its work independently of the program staff. They discussed issues of confidentiality, sexuality, drug and alcohol use, spitituality and positive coping measures and deletion of repetitive questionnaires, and were key during the recruitment process.
+<a href='https://tinyurl.com/Carey1992'>Carey 1992</a>
+
+(c) In the first year of Project Eban’s implementation, each of the 4 sites formed a local Community Advisory Board (CAB). Member recruitment took place during the first 6 months of the study. On average, each site’s CAB consisted of 13–19 stakeholders, including leaders of HIV/AIDS-related Community-Based Organizations (CBOs), hospital-based HIV/AIDS service providers, HIV/AIDS network leaders in minority communities, and CBOs that serve predominantly black communities.
+<a href='https://tinyurl.com/MottCAB2008'>Mott 2008</a>
+
+## Model D
+
+*One-off task-focused PPI (no regular consulting and no decision power in the overall study management)*
+
+In the BREATHER trial, the Children's HIV Association facilitated one meeting with a researcher, children and young people to discuss the study and to definethe  topics for the qualitative interviews.
+<a href='https://tinyurl.com/South2016'>South 2016</a>
+
+## Mix of models
+
+*A mix of above PPI models for different tasks*
+
+In the PROUD study, there was long-term involvement of community representatives in the trial management group, trial steering committee and data monitoring committee, as well as in the community engagement group. There was also one-off involvement of participants in meetings to discuss specific questions (e.g. how to improve recruitment, what the next priority research question was, and how to interpret and communicate the results).
+<a href='https://tinyurl.com/South2016'>South 2016</a>

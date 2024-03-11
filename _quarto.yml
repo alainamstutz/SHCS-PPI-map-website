@@ -1,38 +1,33 @@
-# This file controls the settings for your Quarto template from www.marvinschmitt.com
-
 # website settings
 website:
-  title: "Gandalf"                                # Your name
-  description: "Gandalf is a renowned wizard and scholar of Middle-earth"   # A brief slogan (optional)
-  image: img/my_image.jpg
+  title: "HIV PPI map"                                
+  description: "The HIV PPI map to guide HIV researchers"
+  image: img/shcs_logo.jpg
   
-  favicon: img/favicon.png
+  favicon: img/shcs_logo.jpg
   
   # start of the navigation bar at the top of the website
   navbar:
     pinned: true
-    logo: /img/logo.png
+    logo: /img/shcs_logo.png
     
     # your sub-pages
     left:
-      - text: "Projects"
-        href: projects/index.qmd
-      - text: "Photography"
-        href: photography/index.qmd
-      - text: "CV"
-        href: cv/index.qmd
+      - text: "PPI models"
+        href: ppi_models/index.qmd
+      - text: "Prospective Clinical Trial"
+        href: rct/index.qmd
+      - text: "Observational Study"
+        href: observational/index.qmd
+      - text: "Laboratory Study"
+        href: lab/index.qmd
     
     # your social media handles
     right:
-      - icon: folder-symlink
-        href: https://www.marvinschmitt.com/blog/website-tutorial-quarto/
+      - icon: house-heart
+        href: http://www.shcs.ch
       - icon: twitter
-        href: https://twitter.com/MarvinSchmittML
-      - icon: linkedin
-        href: https://www.linkedin.com/in/marvin-schmitt-a85b321a2/
-      - icon: envelope
-        aria-label: email
-        href: "mailto:mail.marvinschmitt@gmail.com"  
+        href: https://twitter.com/HivSwiss
   
   
 
@@ -42,11 +37,9 @@ website:
     type: textbox
   page-footer: 
     left: |
-      <span class="faux-block">&#169; 2023 Marvin Schmitt CC BY-SA 4.0</span>
-    center: |
-      <span class="faux-block"><a href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/">View the tutorial for this template!</a></span>
+      <span class="faux-block"><a href="https://quarto.org">This homepage was created using R Quarto</a></span>
     right: |
-      <span class="faux-block"><a href="https://github.com/marvinschmitt/quarto-website-template/">View source on GitHub</a></span>
+      <span class="faux-block"><a href="https://github.com/marvinschmitt/quarto-website-template/">Source code of this homepage on GitHub</a></span>
 
 project:
   type: website
@@ -67,7 +60,7 @@ format:
     theme: 
       - pulse
       - html/styles.scss
-    toc: false
+    toc: true
     code-link: true
     anchor-sections: true
     fig-cap-location: margin
