@@ -41,7 +41,7 @@ website:
     left: |
       <span class="faux-block"><a href="https://quarto.org">This homepage was created using R Quarto</a></span>
     right: |
-      <span class="faux-block"><a href="https://github.com/alainamstutz/SHCS-PPI-map-website">Source code of this homepage on GitHub</a></span>
+      <span class="faux-block"><a href="https://github.com/alainamstutz/SHCS-PPI-map-website">Source code on GitHub</a></span>
 
 project:
   type: website
