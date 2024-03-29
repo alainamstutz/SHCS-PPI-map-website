@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>HIV PPI map - Survey</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../img/red-ribbon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script><script src="../site_libs/htmlwidgets-1.6.2/htmlwidgets.js"></script><link href="../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="../site_libs/datatables-binding-0.32/datatables.js"></script><script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script><link href="../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+</head>
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/red-ribbon.png" alt="" class="navbar-logo"></a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">HIV PPI map</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../ppi_models/index.html" rel="" target="">
+ <span class="menu-text">PPI models</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../rct/index.html" rel="" target="">
+ <span class="menu-text">Prospective Clinical Study</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../observational/index.html" rel="" target="">
+ <span class="menu-text">Observational Analysis</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../qualitative/index.html" rel="" target="">
+ <span class="menu-text">Qualitative Study</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../survey/index.html" rel="" target="" aria-current="page">
+ <span class="menu-text">Survey</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lab/index.html" rel="" target="">
+ <span class="menu-text">Laboratory Study</span></a>
+  </li>  
+</ul>
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
+    <a class="nav-link" href="http://www.shcs.ch" rel="" target=""><i class="bi bi-house-heart" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/HivSwiss" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+<div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
+   
+  <ul>
+<li>
+<a href="#planningpreparation-phase" id="toc-planningpreparation-phase" class="nav-link active" data-scroll-target="#planningpreparation-phase">Planning/Preparation Phase</a>
+  <ul class="collapse">
+<li><a href="#ppi-preparatory-work" id="toc-ppi-preparatory-work" class="nav-link" data-scroll-target="#ppi-preparatory-work">PPI preparatory work</a></li>
+  <li><a href="#study-documents" id="toc-study-documents" class="nav-link" data-scroll-target="#study-documents">Study documents</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#implementation-phase" id="toc-implementation-phase" class="nav-link" data-scroll-target="#implementation-phase">Implementation Phase</a>
+  <ul class="collapse">
+<li><a href="#recruitment" id="toc-recruitment" class="nav-link" data-scroll-target="#recruitment">Recruitment</a></li>
+  <li><a href="#data-monitoring-and-analysis" id="toc-data-monitoring-and-analysis" class="nav-link" data-scroll-target="#data-monitoring-and-analysis">Data monitoring and analysis</a></li>
+  </ul>
+</li>
+  <li>
+<a href="#closurepost-closure-phase" id="toc-closurepost-closure-phase" class="nav-link" data-scroll-target="#closurepost-closure-phase">Closure/Post-Closure Phase</a>
+  <ul class="collapse">
+<li><a href="#final-results-interpretation" id="toc-final-results-interpretation" class="nav-link" data-scroll-target="#final-results-interpretation">Final results interpretation</a></li>
+  <li><a href="#ppi-reporting-and-evaluation" id="toc-ppi-reporting-and-evaluation" class="nav-link" data-scroll-target="#ppi-reporting-and-evaluation">PPI reporting and evaluation</a></li>
+  <li><a href="#results-manuscript" id="toc-results-manuscript" class="nav-link" data-scroll-target="#results-manuscript">Results manuscript</a></li>
+  <li><a href="#results-dissemination-and-public-engagement" id="toc-results-dissemination-and-public-engagement" class="nav-link" data-scroll-target="#results-dissemination-and-public-engagement">Results dissemination and public engagement</a></li>
+  </ul>
+</li>
+  </ul></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Survey</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header><section id="planningpreparation-phase" class="level2"><h2 class="anchored" data-anchor-id="planningpreparation-phase">Planning/Preparation Phase</h2>
+<section id="ppi-preparatory-work" class="level3"><h3 class="anchored" data-anchor-id="ppi-preparatory-work">PPI preparatory work</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-9fa04347f403f0f79d0b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-9fa04347f403f0f79d0b">{"x":{"filter":"none","vertical":false,"data":[["PPI member identification                                          ","PPI member identification                                          ","Priority setting and understanding PPI member perspectives early on","Priority setting and understanding PPI member perspectives early on","Priority setting and understanding PPI member perspectives early on","Priority setting and understanding PPI member perspectives early on"],["Systematic participatory mapping incl. snowball sampling                                ","Active outreach to recruit PPI members using several strategies                         ","Informal individual interviews, focus group discussion or in-depth individual interviews","Informal individual interviews, focus group discussion or in-depth individual interviews","Research agenda setting meeting                                                         ","Research agenda setting meeting                                                         "],["A committee of ten people living with HIV (PLHIV) was recruited from community and clinical settings. Sampling sought to include PLHIV with: Different durations of antiretroviral therapy use (three months minimum), varying levels of experience with HIV research or community organizing and abilities to share experiences in a group. We sought representation of different age groups and of the main groups affected by HIV in Quebec, that is: gay, bisexual, and other men who have sex with men (62% of PLHIV in Quebec), people from HIV endemic countries (15%), heterosexual women (10%) and people who inject drugs (4%). Investigators arbitrarily decided that the Team would include a maximum of ten members, all adults, based in Montreal, Canada. To recruit, four Montreal-based community organizations, with which investigators had previously collaborated, and health professionals at the McGill University Health Centre displayed flyers or suggested potential members. Interested individuals (n = 19) contacted the project coordinator by phone. The project’s main objectives and general expectations (eg, to attend meetings) were then explained.","Several strategies were used to recruit PPI members. We (1) approached several individual PPI members who had participated in the initial focus groups or in the pilot study of the intervention; (2) mailed letters or invitations with information about the study to leaders in the HIV field, Community-based organisations, faith-based organizations, HIV medical care providers, and other service agencies to attend an informational meeting about the project; (3) reviewed an existing database of former advocates and PPI members who served on previous projects and mailed them the invitational letter; and (4) accepted referrals via word of mouth from colleagues and associates.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ","As recruitment to the PROUD pilot study came to an end, participants contributed to discussions about the future research priorities for HIV prevention among men who have sex with men in the UK through participant involvement meetings via a webinar and teleconference. These were advertised through the study website, study newsletter and in study clinics. Their discussions helped to directly inform the development of a new funding application                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ","\"Using informal individual interviews, finding out that our patients have different priorities than we do wasn't easy, but ultimately very rewarding. It was a matter of finding a compromise. We achieved that by setting up a somewhat unconventional study design that captured both physical and mental quality of life.\"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ","2-day research agenda setting meeting to reach consensus on a set of priority implementation science research questions to develop, evaluate, and scale up intervention models to improve HIV outcomes within each component of the care continuum among adolescents living with HIV (ALHIV). Participants included 4 ALHIV, funders, implementers and researchers. The meeting started with ALWH sharing their experiences living with HIV, followed by a review of a background article and presentations from expert policy-makers, researchers, and programers. The remainder of the meeting centered on four working group discussions on the following topics: HIV testing and linking ALHIV to care; retaining ALHIV in HIV care; ALHIV adhering to antiretroviral therapy (ART) and achieving viral suppression, and ALHIV transitioning to adult care and HIV self-management. Based on these discussions, 6 implementation science research questions were developed, later voted on and prioritized by all meeting participants.                                                                                                                                              ","In this project, our research team included expert patients. Two of them have already been consulted as SB members before definitively defining research questions, and have been involved in the conception of the research proposal. The questionnaire used in the study were revised and edited by them and three additional members of the CHUV HIV Community Council were consulted to increase diversity of patient input. The expert patients who are part of the research team were involved in the discussions regarding the budget allocated for PPI, are informed about relevant changes in study parameters, and contributed to writing-up the presented results at EACS 2023. Further, they will be involved in further dissemination of results (manuscript). Investigators are in direct contact with the expert patients, ensuring a flat and simplified communication and enabling them to easily share their opinion and manifest any concerns if necessary.                                                                                                                                                                                                           "],["<a href='https://tinyurl.com/Lessard2019'>Lessard 2019<\/a>    ","<a href='https://tinyurl.com/MottCAB2008'>Mott 2008<\/a>       ","<a href='https://tinyurl.com/South2016'>South 2016<\/a>        ","<a href='https://tinyurl.com/dkfbasel'>DKF Basel 1<\/a>        ","<a href='https://tinyurl.com/Denison2017'>Denison 2017<\/a>\n\n","Yonas Martin (Inselspital Bern)                               "]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Task<\/th>\n      <th>Strategy<\/th>\n      <th>Example for Strategy<\/th>\n      <th>Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'font-size': '13px'});\n$(this.api().table().body()).css({'font-size': '12px'});\n}","columnDefs":[{"name":"Task","targets":0},{"name":"Strategy","targets":1},{"name":"Example for Strategy","targets":2},{"name":"Link","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="study-documents" class="level3"><h3 class="anchored" data-anchor-id="study-documents">Study documents</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-586a0b08140dad72019a" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-586a0b08140dad72019a">{"x":{"filter":"none","vertical":false,"data":[["Creation of study protocol & funding proposal                      ","Creation of study protocol & funding proposal                      ","Creation of informed consent process and informed consentform (ICF)","Creation of questionnaires and other study tools                   ","Creation of questionnaires and other study tools                   ","Creation of questionnaires and other study tools                   "],["A group of PPI representatives co-create and review   ","PPI representatives provide a formal letter of support","NA                                                    ","A group of PPI representatives co-create and review   ","A group of PPI representatives co-create and review   ","A group of PPI representatives co-create and review   "],["NA                                                                                                                                                                                                                                                                                                 ","PPI representatives wrote a letter of support for a project funding proposal                                                                                                                                                                                                                       ","NA                                                                                                                                                                                                                                                                                                 ","We reviewed a new PROUD study questionnaire by email with 6 community members and 6 participants                                                                                                                                                                                                   ","Researchers worked with several young people (mostly from community facilities) to test interviews, improve the design of study materials and develop a video explaining the study to potential participants                                                                                       ","In this project, our research team included several expert patients. The questionnaire used in the study were revised and edited by two long-standing PPI members of the SHCS and three additional members of the CHUV HIV Community Council were consulted to increase diversity of patient input."],["NA                                                        ","<a href='https://tinyurl.com/Lessard2019'>Lessard 2019<\/a>","NA                                                        ","<a href='https://tinyurl.com/Gafos2020'>Gafos 2020<\/a>    ","<a href='https://tinyurl.com/South2016'>South 2016<\/a>    ","Yonas Martin (Inselspital Bern)                           "]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Task<\/th>\n      <th>Strategy<\/th>\n      <th>Example for Strategy<\/th>\n      <th>Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'font-size': '13px'});\n$(this.api().table().body()).css({'font-size': '12px'});\n}","columnDefs":[{"name":"Task","targets":0},{"name":"Strategy","targets":1},{"name":"Example for Strategy","targets":2},{"name":"Link","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+</div>
+</div>
+</section></section><section id="implementation-phase" class="level2"><h2 class="anchored" data-anchor-id="implementation-phase">Implementation Phase</h2>
+<section id="recruitment" class="level3"><h3 class="anchored" data-anchor-id="recruitment">Recruitment</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-733f023148e4c7746c61" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-733f023148e4c7746c61">{"x":{"filter":"none","vertical":false,"data":[["Development of the trial recruitment strategy"],["Specific recruitment promotion and information material"],["Young people living with HIV worked with a community organisation to design a logo and posters to promote the recruitment to the study and produced a short video to explain the study in a way that is fun and understandable"],["<a href='https://tinyurl.com/South2016'>South 2016<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Task<\/th>\n      <th>Strategy<\/th>\n      <th>Example for Strategy<\/th>\n      <th>Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'font-size': '13px'});\n$(this.api().table().body()).css({'font-size': '12px'});\n}","columnDefs":[{"name":"Task","targets":0},{"name":"Strategy","targets":1},{"name":"Example for Strategy","targets":2},{"name":"Link","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="data-monitoring-and-analysis" class="level3"><h3 class="anchored" data-anchor-id="data-monitoring-and-analysis">Data monitoring and analysis</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-993945f7022b2dd221f5" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-993945f7022b2dd221f5">{"x":{"filter":"none","vertical":false,"data":[["NA"],["NA"],["NA"],["NA"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Task<\/th>\n      <th>Strategy<\/th>\n      <th>Example for Strategy<\/th>\n      <th>Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'font-size': '13px'});\n$(this.api().table().body()).css({'font-size': '12px'});\n}","columnDefs":[{"name":"Task","targets":0},{"name":"Strategy","targets":1},{"name":"Example for Strategy","targets":2},{"name":"Link","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+</div>
+</div>
+</section></section><section id="closurepost-closure-phase" class="level2"><h2 class="anchored" data-anchor-id="closurepost-closure-phase">Closure/Post-Closure Phase</h2>
+<section id="final-results-interpretation" class="level3"><h3 class="anchored" data-anchor-id="final-results-interpretation">Final results interpretation</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-b52fb67b83e1cd4b7852" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-b52fb67b83e1cd4b7852">{"x":{"filter":"none","vertical":false,"data":[["Review and interpretation of final study results"],["Hold meetings with PPI representatives to present and discuss the final results"],["For example, when preliminary results of a PIVOT sub-study on cognitive impairment were presented at an investigators’ meeting, the patient representative on the trial steering committee was concerned about the language used and the appropriateness of the analysis, which had not taken socio-economic and cultural factors into account. This led the researchers to make appropriate adjustments to the analysis before the results were more widely disseminated. Similarly, the researchers involved in the PROUD trial held a number of meetings to gather feedback from participants on the study results, which led them to change the emphasis of the key messages prior to their public release. Initially researchers had planned to emphasise in the key messages the high risk of HIV faced by this group, but following feedback from participants, the emphasis was reduced due to a concern about stigmatisation of the participants."],["<a href='https://tinyurl.com/South2016'>South 2016<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Task<\/th>\n      <th>Strategy<\/th>\n      <th>Example for Strategy<\/th>\n      <th>Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'font-size': '13px'});\n$(this.api().table().body()).css({'font-size': '12px'});\n}","columnDefs":[{"name":"Task","targets":0},{"name":"Strategy","targets":1},{"name":"Example for Strategy","targets":2},{"name":"Link","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="ppi-reporting-and-evaluation" class="level3"><h3 class="anchored" data-anchor-id="ppi-reporting-and-evaluation">PPI reporting and evaluation</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-4a6bcebff96643fada12" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-4a6bcebff96643fada12">{"x":{"filter":"none","vertical":false,"data":[["PPI reporting and evaluation","PPI reporting and evaluation"],["Use the GRIPP2 checklist to report the PPI","In addition, evaluate the PPI process     "],["The Guidance for Reporting Involvement of Patients and the Public (GRIPP2) Long Form checklist for this study can be found in Additional file 1, there is also a straight-forward short form                                                                                                                                                                                                                    ","Structured surveys among participant and community representatives (n=88) involved in the PROUD study were carried out. Overall, participants were positive about their involvement; only two participants rated their experience unfavourably. Most participants and all community representatives felt their involvement made a difference to the trial, themselves and/or the organisations they represented."],["<a href='https://tinyurl.com/Gafos2020'>Gafos 2020<\/a> | <a href='https://tinyurl.com/GRIPP2shortform'>GRIPP2 short form<\/a>","<a href='https://tinyurl.com/Gafos2020'>Gafos 2020<\/a>                                                                      "]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Task<\/th>\n      <th>Strategy<\/th>\n      <th>Example for Strategy<\/th>\n      <th>Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'font-size': '13px'});\n$(this.api().table().body()).css({'font-size': '12px'});\n}","columnDefs":[{"name":"Task","targets":0},{"name":"Strategy","targets":1},{"name":"Example for Strategy","targets":2},{"name":"Link","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="results-manuscript" class="level3"><h3 class="anchored" data-anchor-id="results-manuscript">Results manuscript</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-1ff9054d42ebc7e9b22e" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-1ff9054d42ebc7e9b22e">{"x":{"filter":"none","vertical":false,"data":[["Manuscript writing"],["Academic papers alongside community outlets"],["Once results were agreed on, a multipronged dissemination strategy was adopted. Three scholarly papers were prepared for peer-review audiences. Four youth-friendly ‘zines were created for community distribution. (‘Zines are a popular youth culture medium. They are self-published non commercial magazines that are often made using collage techniques with original and appropriated texts and images). Team members also collaborated on the development of three community newsletter articles and 21 conference presentations;"],["<a href='https://tinyurl.com/Flicker2008'>Flicker 2006<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Task<\/th>\n      <th>Strategy<\/th>\n      <th>Example for Strategy<\/th>\n      <th>Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'font-size': '13px'});\n$(this.api().table().body()).css({'font-size': '12px'});\n}","columnDefs":[{"name":"Task","targets":0},{"name":"Strategy","targets":1},{"name":"Example for Strategy","targets":2},{"name":"Link","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+</div>
+</div>
+</section><section id="results-dissemination-and-public-engagement" class="level3"><h3 class="anchored" data-anchor-id="results-dissemination-and-public-engagement">Results dissemination and public engagement</h3>
+<div class="cell">
+<div class="cell-output-display">
+
+<div class="datatables html-widget html-fill-item-overflow-hidden html-fill-item" id="htmlwidget-8c4858dc8dd92703f8c6" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8c4858dc8dd92703f8c6">{"x":{"filter":"none","vertical":false,"data":[["Communication and dissemintation of findings including public engagement","Communication and dissemintation of findings including public engagement","Communication and dissemintation of findings including public engagement"],["Creating a movie and using (social) media","Dissemination Meetings                   ","Creating Network                         "],["Getting involved with making a film documentary (2 community members and 3 participants), speaking to the media or providing information to the media (<5 community members and participants), getting involved in the World AIDS Day twitter event (1 community member and 1 participant)     ","PPI members took part in 4 dissemination activities, in collaboration with the investigators,  to disseminate I-Score Study research results in the HIV community. Also, the contribution of the PPI members to the research process was acknowledged and discussed in detail                  ","In addition to the benefits of sharing knowledge, skills, and resources, a final aspect of the dissemination phase of the research program was to create a community resource directory listing all service organizations, churches, and schools that might benefit from the research findings."],["<a href='https://tinyurl.com/Gafos2020'>Gafos 2020<\/a>        ","<a href='https://tinyurl.com/Lessard2019'>Lessard 2019<\/a>    ","<a href='https://tinyurl.com/Flaskerud1999'>Flaskerud 1999<\/a>"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Task<\/th>\n      <th>Strategy<\/th>\n      <th>Example for Strategy<\/th>\n      <th>Link<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"dom":"t","initComplete":"function(settings, json) {\n$(this.api().table().header()).css({'font-size': '13px'});\n$(this.api().table().body()).css({'font-size': '12px'});\n}","columnDefs":[{"name":"Task","targets":0},{"name":"Strategy","targets":1},{"name":"Example for Strategy","targets":2},{"name":"Link","targets":3}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+</div>
+</div>
+
+
+</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left"><span class="faux-block"><a href="https://quarto.org">This homepage was created using R Quarto</a></span></div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right"><span class="faux-block"><a href="https://github.com/alainamstutz/SHCS-PPI-map-website">Source code on GitHub</a></span></div>
+  </div>
+</footer>
+
+
+</body></html>

@@ -2,12 +2,12 @@
 title: PPI models
 ---
 
-During our mapping review, we identified 4 common models how research teams applied PPI in their HIV research project. We briefly present them here, including examples from the review.
+During our mapping review, we identified 4 common models how research teams applied PPI in their HIV research project. We briefly present them here.
 
-At the start of your project, define which model (or a mix thereof) you want to use. A good start is to download and fill in the PPI agreement template from the <a href="https://www.scto.ch/en/patient-and-public-involvement/ppi-resources.html" target="_blank">SCTO PPI homepage.</a>
+At the start of your project, define which model (or a mix thereof) you want to use. A good start is to download and fill in the PPI agreement template from the <a href="https://www.scto.ch/en/patient-and-public-involvement/ppi-resources.html" target="_blank">SCTO PPI homepage.</a> ("Written Agreement for PPI Activities Template").
 
-To report your PPI efforts (e.g. as a supplement to your main results), use the <a href="https://researchinvolvement.biomedcentral.com/articles/10.1186/s40900-017-0062-2/tables/2" target="_blank">GRIPP2</a> short form. A filled in example can be found
-<a href="https://www.bmj.com/content/358/bmj.j3453" target="_blank">here</a> in Table 3.
+To report your PPI efforts (e.g. as a supplement to your main results), use the <a href="https://researchinvolvement.biomedcentral.com/articles/10.1186/s40900-017-0062-2/tables/2" target="_blank">GRIPP2</a> short form. An example can be found
+<a href="https://www.bmj.com/content/358/bmj.j3453" target="_blank">here in Table 3.</a> 
 
 ## Model A
 

@@ -1,5 +1,5 @@
 ---
-title: Qualitative Study
+title: Survey
 ---
 
 ```{r, echo=F, message=F, warning=F, include=F}
@@ -11,14 +11,14 @@ library(here)
 ```
 
 ```{r, echo=F, message=F, warning=F, include=F}
-df_qual <- read_xlsx(here("HIV_PPI_map.xlsx"), sheet = "Qualitative Study")
+df_surv <- read_xlsx(here("HIV_PPI_map.xlsx"), sheet = "Survey")
 ```
 
 ## Planning/Preparation Phase
 
 ### PPI preparatory work
 ```{r, echo=F, message=F, warning=F}
-df <- df_qual %>% 
+df <- df_surv %>% 
   filter(`Task Area` == "PPI Preparatory Work") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(
@@ -38,7 +38,7 @@ as.datatable(
 
 ### Study documents
 ```{r, echo=F, message=F, warning=F}
-df <- df_qual %>% 
+df <- df_surv %>% 
   filter(`Task Area` == "Study documents") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(
@@ -60,7 +60,7 @@ as.datatable(
 
 ### Recruitment
 ```{r, echo=F, message=F, warning=F}
-df <- df_qual %>% 
+df <- df_surv %>% 
   filter(`Task Area` == "Recruitment") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(
@@ -78,30 +78,10 @@ as.datatable(
 )
 ```
 
-### Interviews
+### Data monitoring and analysis
 ```{r, echo=F, message=F, warning=F}
-df <- df_qual %>% 
-  filter(`Task Area` == "Interviews") %>% 
-  select(-Phase, -`Task Area`, -`Add References and Links`)
-as.datatable(
-  formattable(df),
-  rownames = FALSE,
-  options = list(
-    dom = 't',
-    initComplete = JS(
-      "function(settings, json) {",
-      "$(this.api().table().header()).css({'font-size': '13px'});",
-      "$(this.api().table().body()).css({'font-size': '12px'});",
-      "}"
-    )
-  )
-)
-```
-
-### Transcription, Coding
-```{r, echo=F, message=F, warning=F}
-df <- df_qual %>% 
-  filter(`Task Area` == "Transcription, Coding") %>% 
+df <- df_surv %>% 
+  filter(`Task Area` == "Data monitoring and analysis") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(
   formattable(df),
@@ -122,7 +102,7 @@ as.datatable(
 
 ### Final results interpretation
 ```{r, echo=F, message=F, warning=F}
-df <- df_qual %>% 
+df <- df_surv %>% 
   filter(`Task Area` == "Final results interpretation") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(
@@ -142,7 +122,7 @@ as.datatable(
 
 ### PPI reporting and evaluation
 ```{r, echo=F, message=F, warning=F}
-df <- df_qual %>% 
+df <- df_surv %>% 
   filter(`Task Area` == "PPI reporting and evaluation") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(
@@ -162,7 +142,7 @@ as.datatable(
 
 ### Results manuscript
 ```{r, echo=F, message=F, warning=F}
-df <- df_qual %>% 
+df <- df_surv %>% 
   filter(`Task Area` == "Results manuscript") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(
@@ -182,7 +162,7 @@ as.datatable(
 
 ### Results dissemination and public engagement
 ```{r, echo=F, message=F, warning=F}
-df <- df_qual %>% 
+df <- df_surv %>% 
   filter(`Task Area` == "Results dissemination and public engagement") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(

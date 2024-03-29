@@ -58,12 +58,52 @@ as.datatable(
 
 ## Implementation Phase
 
-## Closure/Post-Closure Phase
-
-### Results interpretation
+### Obtaining Data
 ```{r, echo=F, message=F, warning=F}
 df <- df_obs %>% 
-  filter(`Task Area` == "Results interpretation") %>% 
+  filter(`Task Area` == "Obtaining Data") %>% 
+  select(-Phase, -`Task Area`, -`Add References and Links`)
+as.datatable(
+  formattable(df),
+  rownames = FALSE,
+  options = list(
+    dom = 't',
+    initComplete = JS(
+      "function(settings, json) {",
+      "$(this.api().table().header()).css({'font-size': '13px'});",
+      "$(this.api().table().body()).css({'font-size': '12px'});",
+      "}"
+    )
+  )
+)
+```
+
+### Data management and analysis
+```{r, echo=F, message=F, warning=F}
+df <- df_obs %>% 
+  filter(`Task Area` == "Data management and analysis") %>% 
+  select(-Phase, -`Task Area`, -`Add References and Links`)
+as.datatable(
+  formattable(df),
+  rownames = FALSE,
+  options = list(
+    dom = 't',
+    initComplete = JS(
+      "function(settings, json) {",
+      "$(this.api().table().header()).css({'font-size': '13px'});",
+      "$(this.api().table().body()).css({'font-size': '12px'});",
+      "}"
+    )
+  )
+)
+```
+
+## Closure/Post-Closure Phase
+
+### Final results interpretation
+```{r, echo=F, message=F, warning=F}
+df <- df_obs %>% 
+  filter(`Task Area` == "Final results interpretation") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(
   formattable(df),

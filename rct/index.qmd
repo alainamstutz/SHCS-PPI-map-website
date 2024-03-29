@@ -100,10 +100,10 @@ as.datatable(
 
 ## Closure/Post-Closure Phase
 
-### Results interpretation
+### Final results interpretation
 ```{r, echo=F, message=F, warning=F}
 df <- df_rct %>% 
-  filter(`Task Area` == "Results interpretation") %>% 
+  filter(`Task Area` == "Final results interpretation") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(
   formattable(df),

@@ -17,7 +17,7 @@ about:
 
 # Welcome to the HIV PPI map
 
-People with lived experience of medical conditions can provide valuable input into research endeavors to ensure that they are relevant and adapted to their needs. Patient and Public Involvement (PPI) is the process whereby patients and members of the public work alongside researchers, from the definition of research priorities, grant writing, study conceptualization, research tool development, results interpretation, through to dissemination. Increasing evidence highlights how PPI can improve research in terms of patient relevant outcomes, project implementation, acceptability of the proposed intervention and participant recruitment and engagement. Further, funders and publishers increasingly require PPI as an integral part of medical research.
+People with lived experience of medical conditions can provide valuable input for research projects to ensure that they are relevant and adapted to their needs. Patient and Public Involvement (PPI) is the process whereby patients and members of the public work alongside researchers, from the definition of research priorities, grant writing, study conceptualization, research tool development, results interpretation, through to dissemination. Increasing evidence highlights how PPI can improve research in terms of patient relevant outcomes, project implementation, acceptability of the proposed intervention and participant recruitment and engagement. Further, funders and publishers increasingly require PPI as an integral part of a research project.
 
 And so does the Swiss HIV Cohort Studies (SHCS). For each SHCS nested project funding proposal, a description of how PPI will be applied in the proposed project is required.
 
