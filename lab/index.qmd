@@ -58,30 +58,10 @@ as.datatable(
 
 ## Implementation Phase
 
-### Obtaining Samples
+### Obtaining and analysing samples
 ```{r, echo=F, message=F, warning=F}
 df <- df_lab %>% 
-  filter(`Task Area` == "Obtaining Samples") %>% 
-  select(-Phase, -`Task Area`, -`Add References and Links`)
-as.datatable(
-  formattable(df),
-  rownames = FALSE,
-  options = list(
-    dom = 't',
-    initComplete = JS(
-      "function(settings, json) {",
-      "$(this.api().table().header()).css({'font-size': '13px'});",
-      "$(this.api().table().body()).css({'font-size': '12px'});",
-      "}"
-    )
-  )
-)
-```
-
-### Sample analyses
-```{r, echo=F, message=F, warning=F}
-df <- df_lab %>% 
-  filter(`Task Area` == "Sample analyses") %>% 
+  filter(`Task Area` == "Obtaining and analysing samples") %>% 
   select(-Phase, -`Task Area`, -`Add References and Links`)
 as.datatable(
   formattable(df),

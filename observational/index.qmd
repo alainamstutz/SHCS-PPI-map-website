@@ -58,26 +58,6 @@ as.datatable(
 
 ## Implementation Phase
 
-### Obtaining Data
-```{r, echo=F, message=F, warning=F}
-df <- df_obs %>% 
-  filter(`Task Area` == "Obtaining Data") %>% 
-  select(-Phase, -`Task Area`, -`Add References and Links`)
-as.datatable(
-  formattable(df),
-  rownames = FALSE,
-  options = list(
-    dom = 't',
-    initComplete = JS(
-      "function(settings, json) {",
-      "$(this.api().table().header()).css({'font-size': '13px'});",
-      "$(this.api().table().body()).css({'font-size': '12px'});",
-      "}"
-    )
-  )
-)
-```
-
 ### Data management and analysis
 ```{r, echo=F, message=F, warning=F}
 df <- df_obs %>% 

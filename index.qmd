@@ -7,9 +7,6 @@ about:
     - icon: house-heart
       text: SHCS Homepage
       href: http://www.shcs.ch
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/HivSwiss
 ---
 
 ::: {#about-block}
