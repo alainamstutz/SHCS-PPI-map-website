@@ -9,6 +9,8 @@ At the start of your project, define which model (or a mix thereof) you want to 
 To report your PPI efforts (e.g. as a supplement to your main results), use the <a href="https://researchinvolvement.biomedcentral.com/articles/10.1186/s40900-017-0062-2/tables/2" target="_blank">GRIPP2</a> short form. An example can be found
 <a href="https://www.bmj.com/content/358/bmj.j3453" target="_blank">here in Table 3.</a> 
 
+And <a href="https://dkf.unibas.ch/de/aus-weiterbildung/patient-and-public-involvement-ppi/" target="_blank">here</a> is a short online course (in German, French, Italian).
+
 ## Model A
 
 *A few PPI representatives as part of study team (with decision power in the overall study management)*

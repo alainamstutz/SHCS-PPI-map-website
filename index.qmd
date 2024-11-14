@@ -26,6 +26,6 @@ Feel free to [contact us](mailto:David.Jackson-Perry©chuv.ch) if you have any q
 
 ```{=html}
 <div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.researchsquare.com/article/rs-4078072/v1" role="button" target="_blank" style="padding: 15px 30px;">View the underlying mapping review that informed the creation of this evidence map</a>
+<a class="btn btn-primary" href="https://onlinelibrary.wiley.com/doi/10.1002/jia2.26385" role="button" target="_blank" style="padding: 15px 30px;">View the underlying mapping review that informed the creation of this evidence map</a>
 </div>
 ```
